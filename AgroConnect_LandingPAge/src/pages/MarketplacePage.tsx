@@ -150,7 +150,7 @@ const products = [
     minOrder: 25,
     farmer: "Rajesh Kumar",
     location: "Nashik, MH",
-    image: "/placeholder.svg",
+    image: "https://th.bing.com/th/id/OIP.JTO3L9h58izvGtDpyR88rAHaLF?w=187&h=280&c=7&r=0&o=5&dpr=1.8&pid=1.7",
     organic: true,
   },
   {

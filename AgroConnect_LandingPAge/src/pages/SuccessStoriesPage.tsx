@@ -41,7 +41,7 @@ export default function SuccessStoriesPage() {
                     <img
                       src="https://th.bing.com/th/id/OIP.tL1dKiGcEl_zmAltMAiCDQHaHa?w=189&h=189&c=7&r=0&o=5&dpr=2&pid=1.7"
                       alt="Featured Farmer"
-                      className="w-full h-max-[400px] object-cover rounded-t-lg"
+                      className="w-full h-max-[400px] object-contain rounded-t-lg"
                     />
                   </div>
                   <div className="p-8 lg:p-12">
@@ -191,7 +191,7 @@ const successStories = [
         name: "Amit Patel",
         location: "Vegetable Farmer, Gujarat",
         excerpt: "Since joining Agronet, I've expanded my customer base across three states and increased my income significantly.",
-        image: "/placeholder.svg",
+        image: "https://th.bing.com/th/id/OIP.oQEQvTunq-fTXmOK1hFSyAHaLH?w=187&h=280&c=7&r=0&o=5&dpr=1.8&pid=1.7",
         revenueIncrease: "35%",
         crops: "Tomatoes, Peppers",
       },

@@ -1,0 +1,475 @@
+{
+    "hero1": {
+      "tagline": "Connecting Farmers with Buyers",
+      "title": "Transform Agriculture with Direct Market Access",
+      "subtitle": "Eliminate middlemen and improve farmer profitability through direct market access. Join thousands of farmers and buyers on Agronet.",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Why Choose Agronet?",
+      "subtitle": "We provide innovative solutions to connect farmers directly with buyers, ensuring better prices and sustainable agriculture.",
+      "directMarket": {
+        "title": "Direct Market Access",
+        "description": "Connect directly with buyers and get better prices for your produce without intermediaries."
+      },
+      "smartPrice": {
+        "title": "Smart Price Discovery",
+        "description": "Real-time market prices and trends to help you make informed decisions."
+      },
+      "securePayments": {
+        "title": "Secure Payments",
+        "description": "Safe and instant payment processing with multiple payment options."
+      },
+      "qualityAssurance": {
+        "title": "Quality Assurance",
+        "description": "Built-in quality verification system to maintain high standards."
+      },
+      "logistics": {
+        "title": "Logistics Support",
+        "description": "Integrated transportation and storage solutions for seamless delivery."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Dedicated customer support team to assist you at every step."
+      }
+    },
+    "stats": {
+      "farmers": "Registered Farmers",
+      "buyers": "Active Buyers",
+      "volume": "Trade Volume (₹)",
+      "earnings": "Increase in Earnings"
+    },
+    "cta": {
+      "title": "Ready to Transform Agriculture?",
+      "subtitle": "Join thousands of farmers and buyers already benefiting from direct market access.",
+      "button": "Get Started Now"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about Agronet",
+      "stillHaveQuestions": "Still have questions?",
+      "contactSupport": "If you cannot find an answer to your question in our FAQ, you can always contact us. We will answer shortly!",
+      "contactButton": "Contact Support",
+      "categories": {
+        "general": {
+          "title": "General Questions",
+          "description": "Basic information about Agronet",
+          "questions": {
+            "what-is-agronet": {
+              "question": "What is Agronet?",
+              "answer": "Agronet is a digital platform connecting farmers directly with buyers, eliminating middlemen and ensuring better prices for agricultural produce."
+            },
+            "how-to-register": {
+              "question": "How do I register on Agronet?",
+              "answer": "Simply register as a farmer or buyer, complete your profile, and start connecting with potential trading partners."
+            }
+          }
+        },
+        "farmers": {
+          "title": "For Farmers",
+          "description": "Information for farmers using Agronet",
+          "questions": {
+            "how-to-list": {
+              "question": "How do I list my products?",
+              "answer": "After logging in, go to your dashboard and click on 'Add Product'. Fill in the details about your produce, including quantity, price, and quality parameters."
+            },
+            "payment-process": {
+              "question": "How do I receive payments?",
+              "answer": "Payments are processed securely through our platform. You can link your bank account in your profile settings to receive direct payments when your produce is sold."
+            }
+          }
+        },
+        "buyers": {
+          "title": "For Buyers",
+          "description": "Information for buyers using Agronet",
+          "questions": {
+            "quality-assurance": {
+              "question": "How is quality assured?",
+              "answer": "We have a robust quality verification system. All products are checked against quality parameters, and we provide detailed quality reports. You can also check farmer ratings and reviews."
+            },
+            "bulk-ordering": {
+              "question": "Can I place bulk orders?",
+              "answer": "Yes, you can place bulk orders directly through the platform. Many farmers offer special prices for bulk purchases. You can negotiate prices for large quantities."
+            }
+          }
+        }
+      }
+    },
+    
+      "about": {
+        "header": "About Agronet",
+        "title": "Revolutionizing Agriculture Through Technology",
+        "subtitle": "We're on a mission to empower farmers and create a sustainable agricultural ecosystem.",
+        "imageAlt": "Farmers using Agronet",
+        "yearsOfExcellence": "Years of Excellence",
+        "mission": {
+          "title": "Our Mission",
+          "description": "To create a transparent and efficient agricultural marketplace..."
+        },
+        "vision": {
+          "title": "Our Vision",
+          "description": "To be the leading agricultural technology platform..."
+        },
+        "values": {
+          "title": "Our Core Values",
+          "innovation": { "title": "Innovation", "description": "We constantly innovate to provide the best solutions..." },
+          "transparency": { "title": "Transparency", "description": "We believe in complete transparency..." },
+          "empowerment": { "title": "Empowerment", "description": "We work to empower farmers..." },
+          "excellence": { "title": "Excellence", "description": "We strive for excellence in everything we do." }
+        },
+        "joinUs": {
+          "title": "Join Us in Transforming Agriculture",
+          "description": "Be part of the agricultural revolution...",
+          "buttonText": "Join Agronet"
+        }
+      },
+     "products": {
+      "featuredProducts": "Featured Products",
+      "discoverProducts": "Discover our selection of premium organic products",
+      "filterByCategory": "Filter by Category",
+      "filterByCity": "Filter by City",
+      "allCategories": "All Categories",
+      "allStates": "All States",
+      "fruits": "Fruits",
+      "grains": "Grains",
+      "Organic Apples": "Organic Apples",
+      "Fresh Mangoes": "Fresh Mangoes",
+      "Organic Wheat": "Organic Wheat",
+      "Kesar Mango": "Kesar Mango",
+      "Pearl Millet": "Pearl Millet",
+      "Kinno Orange": "Kinno Orange",
+      "Premium Wheat": "Premium Wheat",
+      "Pomegranate": "Pomegranate",
+      "Organic Barley": "Organic Barley",
+      "Red Banana": "Red Banana",
+      "Red Rice": "Red Rice",
+      "Alphonso Mango": "Alphonso Mango",
+      "Jowar": "Jowar",
+      "Sweet Lime": "Sweet Lime",
+      "Fine Rice": "Fine Rice",
+      "500 kg available": "500 kg available",
+      "300 kg available": "300 kg available",
+      "1000 kg available": "1000 kg available",
+      "2000 kg available": "2000 kg available",
+      "800 kg available": "800 kg available",
+      "5000 kg available": "5000 kg available",
+      "600 kg available": "600 kg available",
+      "1500 kg available": "1500 kg available",
+      "400 kg available": "400 kg available",
+      "2500 kg available": "2500 kg available",
+      "700 kg available": "700 kg available",
+      "3000 kg available": "3000 kg available",
+      "Fresh, crisp apples grown without pesticides": "Fresh, crisp apples grown without pesticides",
+      "Sweet and juicy mangoes from local orchards": "Sweet and juicy mangoes from local orchards",
+      "Premium quality wheat grains, perfect for bread and rotis": "Premium quality wheat grains, perfect for bread and rotis",
+      "Premium Gir Kesar mangoes, known for their sweet taste and aroma": "Premium Gir Kesar mangoes, known for their sweet taste and aroma",
+      "High-quality bajra grown in Gujarat's fertile soil": "High-quality bajra grown in Gujarat's fertile soil",
+      "Sweet and juicy Kinno oranges from Punjab orchards": "Sweet and juicy Kinno oranges from Punjab orchards",
+      "High-quality wheat from Punjab's golden fields": "High-quality wheat from Punjab's golden fields",
+      "Fresh pomegranates from Rajasthan's orchards": "Fresh pomegranates from Rajasthan's orchards",
+      "Naturally grown barley from Rajasthan's farms": "Naturally grown barley from Rajasthan's farms",
+      "Sweet and nutritious red bananas from Kerala": "Sweet and nutritious red bananas from Kerala",
+      "Traditional Kerala red rice, rich in nutrients": "Traditional Kerala red rice, rich in nutrients",
+      "Premium Ratnagiri Alphonso mangoes": "Premium Ratnagiri Alphonso mangoes",
+      "High-quality sorghum from Maharashtra farms": "High-quality sorghum from Maharashtra farms",
+      "Fresh and juicy mosambi from Telangana orchards": "Fresh and juicy mosambi from Telangana orchards",
+      "Premium quality rice from Telangana paddy fields": "Premium quality rice from Telangana paddy fields",
+      "knowMore": "Know More",
+      "showMore":"Show More Products",
+    
+      "cities": {
+        "New York": "New York",
+        "Mumbai": "Mumbai",
+        "Delhi": "Delhi",
+        "Junagadh": "Junagadh",
+        "Mehsana": "Mehsana",
+        "Amritsar": "Amritsar",
+        "Ludhiana": "Ludhiana",
+        "Jodhpur": "Jodhpur",
+        "Jaipur": "Jaipur",
+        "Kochi": "Kochi",
+        "Thrissur": "Thrissur",
+        "Ratnagiri": "Ratnagiri",
+        "Nashik": "Nashik",
+        "Hyderabad": "Hyderabad",
+        "Warangal": "Warangal"
+      },
+      
+        "farmerNames": {
+          "John Smith": "John Smith",
+          "Rajesh Kumar": "Rajesh Kumar",
+          "Amit Patel": "Amit Patel",
+          "Rajesh Patel": "Rajesh Patel",
+          "Bharat Modi": "Bharat Modi",
+          "Gurpreet Singh": "Gurpreet Singh",
+          "Harjinder Singh": "Harjinder Singh",
+          "Ramesh Sharma": "Ramesh Sharma",
+          "Vikram Singh": "Vikram Singh",
+          "Thomas Joseph": "Thomas Joseph",
+          "Mathew Philip": "Mathew Philip",
+          "Suresh Desai": "Suresh Desai",
+          "Prakash Patil": "Prakash Patil",
+          "Krishna Reddy": "Krishna Reddy",
+          "Ravi Kumar": "Ravi Kumar"
+        },
+        "rating": "Rating",
+        "Negotiate": "Negotiate",
+        "Read More": "Read More",
+        "View Less": "View Less",
+        "Product Info": "Product Info",
+        "Quantity": "Quantity",
+        "Price Range": "Price Range",
+        "Category": "Category",
+        "Farmer Details": "Farmer Details",
+        "Name": "Name",
+        "Contact": "Contact",
+        "Location": "Location",
+        "Detailed Information": "Detailed Information",
+        "Product Certification": "Product Certification",
+        "Land Type": "Land Type",
+        "Farming Practices": "Farming Practices",
+        "Quality Parameters": "Quality Parameters",
+        "Farmer Experience": "Farmer Experience",
+        "farmingPractices": {
+          "No chemical pesticides used": "No chemical pesticides used",
+          "Natural fertilizers only": "Natural fertilizers only",
+          "Sustainable irrigation methods": "Sustainable irrigation methods",
+          "Crop rotation practiced": "Crop rotation practiced"
+        },
+        "qualityParameters": {
+          "Hand-picked at optimal ripeness": "Hand-picked at optimal ripeness",
+          "Carefully sorted and graded": "Carefully sorted and graded",
+          "Stored in temperature-controlled environment": "Stored in temperature-controlled environment",
+          "Regular quality checks performed": "Regular quality checks performed"
+        }
+  },
+    
+        "contact": {
+    "title": "Contact Us",
+    "subtitle": "Earn your Profit without 3rd parties extra moneys",
+    "getInTouch": "Get in Touch",
+    "description": "Have questions about Agronet? We're here to help. Send us a message and we'll get back to you as soon as possible.",
+    "address": {
+      "title": "Address",
+      "line1": "Marwadi University",
+      "line2": "Rajkot, Gujarat",
+      "line3": "India"
+    },
+    "email": {
+      "title": "Email",
+      "value": "nit@agronet.com"
+    },
+    "phone": {
+      "title": "Phone",
+      "value": "+91 123 456 7890"
+    },
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill out the form below and we'll get back to you as soon as possible.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone number",
+      "message": "Message",
+      "messagePlaceholder": "How can we help?",
+      "submit": "Send message"
+    }
+  },
+  "hero": {
+    "title": "Farming Knowledge Hub",
+    "subtitle": "Stay updated with the latest farming techniques, market insights, and success stories"
+  },
+  "categories": [
+    {
+      "name": "Farming Techniques",
+      "description": "Modern and traditional farming methods"
+    },
+    {
+      "name": "Market Insights",
+      "description": "Price trends and market analysis"
+    },
+    {
+      "name": "Success Stories",
+      "description": "Learn from successful farmers"
+    },
+    {
+      "name": "Technology",
+      "description": "AgriTech innovations and tools"
+    }
+  ],
+  "articles": [
+    {
+      "title": "10 Sustainable Farming Practices for Better Yield",
+      "excerpt": "Learn about eco-friendly farming methods that can improve your crop yield while protecting the environment.",
+      "category": "Farming Techniques",
+      "date": "Mar 15, 2024",
+      "readTime": "5 min read",
+      "image": "https://media.istockphoto.com/id/898449496/photo/agriculture-drone-fly-to-sprayed-fertilizer-on-the-green-tea-fie.jpg?s=612x612&w=0&k=20&c=XB9L5U65qaNqs8k7KPKOiL6N_mj1d1JpKPJFcmMsrz0="
+    },
+    {
+      "title": "Understanding Market Prices: A Farmer's Guide",
+      "excerpt": "A comprehensive guide to understanding agricultural market prices and making informed selling decisions.",
+      "category": "Market Insights",
+      "date": "Mar 14, 2024",
+      "readTime": "8 min read",
+      "image": "https://images.unsplash.com/photo-1601172737447-a1bc284c5005?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZhcm1lcnMlMjBtYXJrZXR8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      "title": "From Small Farm to Success: A Farmer's Journey",
+      "excerpt": "Read about how a small-scale farmer transformed their business using modern techniques and direct market access.",
+      "category": "Success Stories",
+      "date": "Mar 13, 2024",
+      "readTime": "6 min read",
+      "image": "https://images.pexels.com/photos/1212102/pexels-photo-1212102.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ],
+  "latest":{
+      "Latest Articles":"Latest Articles"
+  },
+  "buttons": {
+    "readMore": "Read More"
+  },
+  
+    "hero2": {
+      "title": "Success Stories",
+      "subtitle": "Discover how Agronet is transforming the lives of farmers.",
+    
+    "readFullStory": "Read Full Story",
+    "Revenue Increase": "Revenue Increase",
+    "name":"Rajesh Kumar",
+    "Years With Agronet": "Years With Agronet",
+    "quote": "Agronet has completely transformed my farming business. I now get 40% better prices for my produce and have direct relationships with buyers across the country.",
+    "location": "Wheat Farmer, Punjab",
+    "Main Crops": "Main Crops",
+    "years":"Years",
+    "successStories": [
+      {
+        "name": "Amit Patel",
+        "location": "Vegetable Farmer, Gujarat",
+        "excerpt": "Since joining Agronet, I've expanded my customer base across three states and increased my income significantly.",
+        "revenueIncrease": "35%",
+        "crops": "Tomatoes, Peppers"
+      },
+      {
+        "name": "Priya Singh",
+        "location": "Organic Farmer, Maharashtra",
+        "excerpt": "The organic certification support and direct market access through Agronet helped me command premium prices for my produce.",
+        "revenueIncrease": "50%",
+        "crops": "Rice, Pulses"
+      },
+      {
+        "name": "Mohammed Khan",
+        "location": "Fruit Grower, Karnataka",
+        "excerpt": "Agronet's logistics support and quality assurance system has helped me reach premium buyers in metro cities.",
+        "revenueIncrease": "40%",
+        "crops": "Mangoes, Pomegranates"
+      },
+      {
+        "name": "Lakshmi Devi",
+        "location": "Mixed Farmer, Tamil Nadu",
+        "excerpt": "The training and support from Agronet helped me adopt modern farming techniques and improve my yield.",
+        "revenueIncrease": "30%",
+        "crops": "Vegetables, Coconuts"
+      },
+      {
+        "name": "Gurpreet Singh",
+        "location": "Grain Farmer, Punjab",
+        "excerpt": "Direct buyer connections through Agronet helped me get better prices and timely payments for my wheat.",
+        "revenueIncrease": "45%",
+        "crops": "Wheat, Rice"
+      },
+      {
+        "name": "Meena Kumari",
+        "location": "Organic Farmer, Uttarakhand",
+        "excerpt": "Agronet's platform helped me showcase my organic produce to quality-conscious buyers across India.",
+        "revenueIncrease": "55%",
+        "crops": "Millets, Herbs"
+      }
+    ],
+    "joinAgronet": "Join Agronet",
+    "startYourSuccessStory": "Start Your Success Story",
+    "joinThousands": "Join thousands of farmers who have transformed their agricultural business with Agronet"
+  },
+
+  "userType": {
+    "title": "Choose Your Role",
+    "subtitle": "Select whether you want to register as a farmer or a buyer",
+    "farmer": {
+      "title": "Farmer",
+      "description": "Register as a farmer to sell your produce directly to buyers"
+    },
+    "buyer": {
+      "title": "Buyer",
+      "description": "Register as a buyer to purchase quality produce from farmers"
+    }
+  },
+  "personalInfo": {
+    "title": "Personal Information",
+    "subtitle": "Tell us a bit about yourself",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "username": "Username",
+    "password": "Password"
+  },
+  "contactInfo": {
+    "title": "Contact Information",
+    "subtitle": "How can we reach you?",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "country": "Country",
+    "state": "State",
+    "selectCountry": "Select country",
+    "selectState": "Select state",
+    "noStates": "No states available"
+  },
+  "documentUpload": {
+    "title": "Document Upload",
+    "subtitle": "Please provide the required documents",
+    "documentNo": "Document Number",
+    "proofDocument": "Proof Document",
+    "profilePhoto": "Profile Photo",
+    "uploadText": "Upload a file",
+    "dragDropText": "or drag and drop",
+    "fileSize": {
+      "document": "PDF, PNG, JPG up to 10MB",
+      "photo": "PNG, JPG up to 5MB"
+    }
+  },
+  "complete": {
+    "title": "Registration Complete!",
+    "farmerMessage": "Welcome to Agronet! You can now start listing your products and connecting with buyers.",
+    "buyerMessage": "Welcome to Agronet! You can now start browsing products and connecting with farmers.",
+    "dashboard": "Go to Dashboard",
+    "marketplace": {
+      "farmer": "List Products",
+      "buyer": "Browse Products"
+    }
+  },
+  "navigation": {
+    "previous": "Previous",
+    "next": "Next",
+    "submit": "Complete Registration",
+    "submitting": "Submitting..."
+  },
+  "login": {
+    "welcome": "Welcome Back!",
+    "login_message": "Login to access your Agronet account",
+    "username": "Username",
+    "enter_username": "Enter your username",
+    "password": "Password",
+    "show_password": "Show password",
+    "hide_password": "Hide password",
+    "login": "Login",
+    "logging_in": "Logging in...",
+    "or": "or",
+    "forgot_password": "Forgot your password?",
+    "no_account": "Don't have an account?",
+    "register": "Register now",
+    "login_failed": "Login failed. Please check your credentials."
+  }
+  
+      
+    }
+    
+  

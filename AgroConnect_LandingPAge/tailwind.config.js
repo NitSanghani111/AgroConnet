@@ -1,5 +1,14 @@
-/** @type {import('tailwindcss').Config} */
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        border: "hsl(var(--border))",
+      },
+    },
+  },
+  
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -15,77 +24,28 @@ module.exports = {
         "2xl": "1400px",
       },
     },
-
     extend: {
-      fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
-      },
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
       keyframes: {
+        "slide-up-bg": {
+          "0%": { height: "0%" },
+          "100%": { height: "100%" }
+        },
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        },
-        "bounce-slow": {
-          "0%, 100%": {
-            transform: "translateY(-5%)",
-            animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
-          },
-          "50%": {
-            transform: "translateY(0)",
-            animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
-          },
+          to: { height: "0" },
         },
       },
       animation: {
+        "slide-up-bg": "slide-up-bg 0.3s ease-out forwards",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "bounce-slow": "bounce-slow 3s infinite",
       },
+      // ... keep existing code
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

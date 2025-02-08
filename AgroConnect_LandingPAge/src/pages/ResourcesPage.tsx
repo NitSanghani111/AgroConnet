@@ -1,50 +1,109 @@
-import { BookOpen, Award, BarChart, Smartphone, Calendar, Clock, ChevronRight } from 'lucide-react'
-import { Button } from "../components/ui/button"
-import { Card, CardContent } from "../components/ui/card"
-import { AnimatedText } from "../components/ui/animated-text"
-import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next";
+import { BookOpen, Award, BarChart, Clock, ChevronRight, Sparkles } from "lucide-react";
+import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { AnimatedText } from "../components/ui/animated-text";
+import { motion } from "framer-motion";
+
 
 export default function ResourcesPage() {
+  const { t } = useTranslation();
+
+  const categories = t("categories", { returnObjects: true }).map((category: any, index: number) => ({
+    ...category,
+    icon: [BookOpen, BarChart, Award, Sparkles][index] || BookOpen,
+  }));
+
+  const articles = t("articles", { returnObjects: true });
+
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-green-50 to-white" />
-        <div className="container relative">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      
+
+      {/* Hero Section with Parallax Effect */}
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="absolute inset-0 bg-[url('https://images.pexels.com/photos/2804627/pexels-photo-2804627.jpeg?auto=compress&cs=tinysrgb&w=600')] bg-cover bg-center bg-fixed"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-green-900/70 to-green-800/50 backdrop-blur-sm" />
+        <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <AnimatedText   
-              text="Farming &nbsp; Knowledge &nbsp; Hub"
-              className="text-4xl font-bold tracking-tighter mb-4"
-            />
-            <AnimatedText
-              text="Stay &nbsp; updated &nbsp; with the latest &nbsp; farming &nbsp; techniques &nbsp;, market &nbsp; insights, and &nbsp; success stories"
-              className="text-xl text-muted-foreground mb-8"
-              delay={3}
-            />
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              <AnimatedText
+                text={t("hero.title")}
+                className="text-5xl md:text-6xl font-bold tracking-tighter mb-6 text-white"
+              />
+              <AnimatedText
+                text={t("hero.subtitle")}
+                className="text-xl md:text-2xl text-green-50/90 mb-8"
+                delay={0.3}
+              />
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+              >
+                <Button
+                  size="lg"
+                  className="bg-white text-green-800 hover:bg-green-50 transition-all duration-300"
+                >
+                  {t('hero1.getStarted')}
+                </Button>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Categories Section */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-20 bg-gradient-to-b from-white to-green-50">
         <div className="container">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {categories.map((category, index) => (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            {/* Add any additional content here */}
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {categories.map((category: any, index: number) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
+                viewport={{ once: true }}
               >
-                <Card className="group cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style={{height:'150px'}}>
-                  <CardContent className="p-6 text-center">
-                    <div className="rounded-full w-12 h-12 flex items-center justify-center bg-green-100 mx-auto mb-4 mt-5">
-                      <category.icon className="h-8 w-6 text-green-600" />
+                <Card className="group hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden relative border-none shadow-lg hover:shadow-xl bg-white/80 backdrop-blur-sm h-full">
+                  <div className="absolute bottom-0 left-0 w-full bg-green-500/50 group-hover:animate-slide-up-bg z-0" />
+                  <CardContent className="p-8 text-center relative z-10 h-full">
+                    <div className="mb-6 relative">
+                      <div className="absolute inset-0 bg-green-100 rounded-full scale-110 group-hover:scale-125 transition-transform duration-300" />
+                      <category.icon
+                        size={32}
+                        className="relative z-10 mx-auto text-green-600 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
+                      />
                     </div>
-                    <h3 className="font-semibold mb-2">{category.name}</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <h3 className="text-xl font-semibold text-green-800 mb-3 group-hover:text-green-700 transition-colors">
+                      {category.name}
+                    </h3>
+                    <p className="text-green-600/80 mb-6 line-clamp-2">
                       {category.description}
                     </p>
+                    <Button
+                      variant="outline"
+                      className="w-full border-green-200 text-green-700 hover:bg-green-50 hover:text-green-800 transition-all duration-300"
+                    >
+                      {t("buttons.readMore")}
+                    </Button>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -53,141 +112,71 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* Latest Articles */}
-      <section className="py-12">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-8">Latest Articles</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {articles.map((article, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card className="group cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                  <CardContent className="p-0">
-                    <div className="relative h-48">
-                      <img
-                        src={article.image || "/placeholder.svg"}
-                        alt={article.title}
-                        className="w-full h-full object-cover rounded-t-lg"
-                      />
-                      <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm text-green-600 px-3 py-1 rounded-full text-sm">
-                        {article.category}
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
-                        <div className="flex items-center gap-1">
-                          <Calendar className="h-4 w-4" />
-                          {article.date}
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Clock className="h-4 w-4" />
-                          {article.readTime}
-                        </div>
-                      </div>
-                      <h3 className="font-semibold text-xl mb-2">
-                        {article.title}
-                      </h3>
-                      <p className="text-muted-foreground mb-4">
-                        {article.excerpt}
-                      </p>
-                      <Button
-                        variant="link"
-                        className="p-0 h-auto text-green-600 hover:text-green-700"
-                      >
-                        Read More
-                        <ChevronRight className="ml-1 h-4 w-4" />
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 bg-green-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg')] bg-cover bg-center opacity-10" />
-        <div className="container relative">
-          <div className="max-w-3xl mx-auto text-center">
-            <AnimatedText
-              text="Stay &nbsp; Updated &nbsp; with &nbsp; Farming &nbsp; Insights"
-              className="text-3xl font-bold mb-4"
-            />
-            <AnimatedText
-              text="Subscribe &nbsp; to our &nbsp; newsletter &nbsp; for&nbsp; the latest &nbsp; agricultural &nbsp; news, market &nbsp; trends, and &nbsp; farming tips."
-              className="text-xl mb-8"
-              delay={3}
-            />
-            <form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg text-black"
+      {/* Articles Section */}
+      <section className="py-20 bg-[#E6E6FA]">
+  <div className="container">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="text-center mb-12"
+    >
+      <h2 className="text-4xl font-bold text-green-800 mb-4">
+        {t(`latest.${'Latest Articles'}`)}
+      </h2>
+      <div className="w-24 h-1 bg-green-500 mx-auto rounded-full mb-8" />
+    </motion.div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {articles.map((article: any, index: number) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: index * 0.1 }}
+          viewport={{ once: true }}
+          className="h-full"
+        >
+          <Card className="h-full flex flex-col overflow-hidden group hover:shadow-xl transition-all duration-300 border-none">
+            <div className="relative overflow-hidden aspect-video">
+              <img
+                src={article.image}
+                alt={article.title}
+                className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
               />
-              <Button className="bg-white text-bold hover:bg-black-50">
-                Subscribe
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <CardContent className="flex-1 p-6 bg-white">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                  {article.category}
+                </span>
+                <span className="flex items-center text-sm text-green-600">
+                  <Clock className="w-4 h-4 mr-1" />
+                  {article.readTime}
+                </span>
+              </div>
+              <h4 className="text-xl font-semibold text-green-800 mb-3 line-clamp-2 group-hover:text-green-600 transition-colors">
+                {article.title}
+              </h4>
+              <p className="text-green-600/80 mb-6 line-clamp-3">
+                {article.excerpt}
+              </p>
+              <Button
+                className="w-full group/btn bg-green-50 hover:bg-green-100 text-green-800"
+                variant="ghost"
+              >
+                <span className="mr-2">{t("buttons.readMore")}</span>
+                <ChevronRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
               </Button>
-            </form>
-          </div>
-        </div>
-      </section>
+            </CardContent>
+          </Card>
+        </motion.div>
+      ))}
     </div>
-  )
+  </div>
+</section>
+
+
+    </div>
+  );
 }
-
-const categories = [
-  {
-    name: "Farming Techniques",
-    description: "Modern and traditional farming methods",
-    icon: BookOpen,
-  },
-  {
-    name: "Market Insights",
-    description: "Price trends and market analysis",
-    icon: BarChart,
-  },
-  {
-    name: "Success Stories",
-    description: "Learn from successful farmers",
-    icon: Award,
-  },
-  {
-    name: "Technology",
-    description: "AgriTech innovations and tools",
-    icon: Smartphone,
-  },
-]
-
-const articles = [
-  {
-    title: "10 Sustainable Farming Practices for Better Yield",
-    excerpt: "Learn about eco-friendly farming methods that can improve your crop yield while protecting the environment.",
-    category: "Farming Techniques",
-    date: "Mar 15, 2024",
-    readTime: "5 min read",
-    image: "/placeholder.svg",
-  },
-  {
-    title: "Understanding Market Prices: A Farmer's Guide",
-    excerpt: "A comprehensive guide to understanding agricultural market prices and making informed selling decisions.",
-    category: "Market Insights",
-    date: "Mar 14, 2024",
-    readTime: "8 min read",
-    image: "/placeholder.svg",
-  },
-  {
-    title: "From Small Farm to Success: A Farmer's Journey",
-    excerpt: "Read about how a small-scale farmer transformed their business using modern techniques and direct market access.",
-    category: "Success Stories",
-    date: "Mar 13, 2024",
-    readTime: "6 min read",
-    image: "/placeholder.svg",
-  },
-]
-

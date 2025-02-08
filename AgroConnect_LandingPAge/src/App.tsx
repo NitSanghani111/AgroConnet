@@ -10,8 +10,10 @@ import MarketplacePage from './pages/MarketplacePage'
 import ResourcesPage from './pages/ResourcesPage'
 import FAQPage from './pages/FAQPage'
 import SuccessStoriesPage from './pages/SuccessStoriesPage'
+import Product from './pages/Product'
 
 function App() {
+  
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
@@ -19,6 +21,8 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            
+            <Route path="/product" element={<Product />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<LoginPage />} />
